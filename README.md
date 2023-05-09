@@ -1,4 +1,4 @@
-# o Número Secreto
+# O Número Secreto
 
 ![Screenshot_1](https://github.com/CaianMorais/numero-secreto/assets/124800229/b35fe219-ef48-4bce-a4eb-1fe392b13f3a)
 
