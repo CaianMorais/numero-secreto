@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Gantari:wght@100;300&display=swap');
+
+:root{
+    --fonte-principal: 'Gantari', sans-serif;
+    --cor-fundo: #20262E;
+    --cor-primaria: #E9E8E8;
+    --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/sol.png");
+}
+
+.lights{
+    background: var(--label-icon);
+    padding: 2rem;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+#light{
+    display:none;
+}
+
+.light-mode{
+    --label-icon: url("https://caelum-online-public.s3.amazonaws.com/1369-alura-mais-dark-mode/lua.png");
+    --cor-fundo: #E9E8E8;
+    --cor-primaria: #20262E;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    font-family: var(--fonte-principal);
+    transition:1s;
+}
+
+h1{
+    font-size: 5rem;
+    font-weight: 100;
+}
+
+h2{
+    font-size: 3.5rem;
+    font-weight: 100;
+}
+
+h3{
+    font-size: 2rem;
+    margin-top: 20px;
+    font-weight: 100;
+}
+
+.mensagem{
+    font-size: 1rem;
+    margin-top: 40px;
+}
+
+.box{
+    border: 2px solid var(--cor-primaria);
+    border-radius:2px;
+    display: inline-block;
+    font-size: 4rem;
+    padding: 0.8rem;
+    margin: 1rem;
+    font-weight: 100;
+}
+
+strong{
+    font-weight: bold;
+}
+
+.btn-reiniciar{
+    font-family: var(--fonte-principal);
+    font-weight: 300;
+    font-weight:bolder;
+    color: var(--cor-fundo);
+    padding: 0.6rem 0.4rem;
+    border: 0;
+    background-color: var(--cor-primaria);
+    border-radius: 5px;
+    margin-top: 3rem;
+    -webkit-transition: -webkit-transform .4s ease;
+    transition: transform .4s ease;
+    -moz-transition: all .5s ease-in;
+    -o-transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+    transition: all .4s ease-in;
+}
+
+.btn-reiniciar:hover{
+    background-color: var(--cor-fundo);
+    color: var(--cor-primaria);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border: 1px solid var(--cor-primaria);
+    cursor:pointer;
+}
+
